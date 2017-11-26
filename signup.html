@@ -1,0 +1,60 @@
+<html>
+	<head>
+    	<title> Login | SignUp </title>
+        <link type="text/css" rel="stylesheet" href="login/card.css"/>
+        <link type="text/css" rel="stylesheet" href="login/index.css"/>
+         <link type="text/css" rel="stylesheet" href="login/login.css"/>
+         
+         <script type="text/javascript">
+		 	function signupClick()
+			{
+				document.getElementById("signup").style.right="100px";			
+			}
+		 </script>
+    </head>
+    
+    
+    <body class="body">
+        
+          		
+			    <div class="heading" style="width:30%;margin:0 auto;margin-top:2%	">	   				
+           			 <div class="heading_name">
+                		<h3 id="heading">Signup Form </h3>
+            		</div>
+	   			 </div>                 
+   
+                <div class="login" id="login"  >	
+					<form name="myform" method="post" action="index.html"> 
+                    	<input type="text" class="submit" placeholder="First Name" name="name" style="
+                        outline:1px solid #B4B2B2;width:46%;padding-left:2%;border-radius:10px;" 
+                        onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" class="submit" placeholder="Last Name" name="name" style="
+                        outline:1px solid #B4B2B2;width:46%;padding-left:2%;border-radius:10px;" 
+                        onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}"> 
+                        <br/><br>
+                      
+					  <li>
+						<input type="text" class="text" placeholder="username" name="email" style="padding-left:2%" 
+                        onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}">								
+					  </li>
+					
+					
+					<li>
+						<input type="password" placeholder="password" onFocus="this.value = '';"  class="password"
+						onBlur="if (this.value == '') {this.value = '';}" style="padding-left:2%" name="pass">
+						
+					</li>	
+                         
+                         <input type="submit" class="submit" value="SignUp" style="width:100%;margin:0 auto" >	   
+                                       
+					 </form>
+                   
+               </div>            
+               
+               
+               
+               
+     
+    </body>
+</html>

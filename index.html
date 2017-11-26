@@ -1,0 +1,91 @@
+<html>
+	<head>
+    	<title> Login | SignUp </title>
+        <link type="text/css" rel="stylesheet" href="login/card.css"/>
+        <link type="text/css" rel="stylesheet" href="login/index.css"/>
+         <link type="text/css" rel="stylesheet" href="login/login.css"/>
+         
+         <script type="text/javascript">
+		 	function s()
+			{  
+				
+				
+					location.href="signup.html";	
+
+	
+			}
+			function l()
+			{
+			
+				if((document.getElementById("name").value = "" ) && (document.getElementById("password").value = "" ))
+				{
+					alert("Empty Fields");
+				}
+					
+				else
+				{
+					location.href="main.html";
+					//window.open("main.html");
+				}
+		
+			}
+		 </script>
+         
+         
+	
+    </head>
+    
+    
+    <body class="body" ng-app="myapp">
+        
+          		
+			    <div class="heading" style="width:30%;margin:0 auto;margin-top:2%	">	   				
+           			 <div class="heading_name">
+                		<h3 id="heading">Login Form </h3>
+            		</div>
+	   			 </div>                 
+   
+                <div class="login" id="login">	
+					<form name="" method="post" id="f">
+					  <li>
+						<input type="text" class="text" placeholder="username" name="u" style="padding-left:2%" 
+                        onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}" id="name"
+                        >								
+					  </li>
+					
+					
+					<li>
+						<input type="password" placeholder="password..." onFocus="this.value = '';"  class="password"
+						onBlur="if (this.value == '') {this.value = '';}" style="padding-left:2%" name="p"
+                        id="password">
+						
+					</li>	
+                 
+						 <input type="button" class="submit" value="Sign Up" onClick="s()"> &nbsp;&nbsp;&nbsp;                  
+                        <input type="button" class="submit" value="Login"  onClick="l()">	   
+                                  
+					 </form>
+                   
+               </div>          
+               
+  
+	
+	
+	
+</div>  
+               
+               
+               
+               
+     
+    </body>
+    
+    
+    <script>
+	var app = angular.module('myapp', []);
+		app.controller('validatectrl', function($scope) {
+    $scope.u = 'John Doe';
+    $scope.p = '123';
+});
+</script>
+</html>
